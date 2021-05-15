@@ -1,5 +1,7 @@
 :root {
     --nunito: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --varela: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 * {
@@ -535,12 +537,89 @@ main .section2_box .section2_content p a:hover {
     box-shadow: 0 0 2px black;
 }
 
+/* ------------------- Address ------------------*/
 .section4_box .address {
+    display: flex;
+    justify-content: center;
     height: 100vh;
     width: 100vw;
     background: black;
     box-shadow: 0 0 100px 100px black;
 }
+
+.section4_box .address .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.section4_box .address .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 32%;
+    height: 100%;
+    background: #FFFFFF;
+
+    border-radius: 5px;
+    border-bottom: 4px solid #6cb9b4;
+}
+
+.section4_box .address .cards .card h3 {
+    font-size: 0.8em;
+    font-family: var(--varela);
+    font-weight: lighter;
+    color: #212529;
+    margin: 1.2em;
+
+    letter-spacing: 2px;
+
+}
+
+.section4_box .address .cards .card hr {
+    background-color: #6cb9b4;
+    width: 12%;
+    height: auto;
+    padding: 1.5px;
+
+    margin-bottom: 1.2em;
+    border: none;
+}
+
+.section4_box .address .cards .card address,
+.section4_box .address .cards .card p {
+    color: #00000080;
+    font-family: var(--nunito);
+    font-size: 12.8px;
+   
+
+    letter-spacing: 1px;
+}
+
+.section4_box .address .cards .card a {
+    font-family: var(--nunito);
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+    color: #6cb9b4;
+
+    letter-spacing: 1px;
+}
+
+.section4_box .address .cards .card a:hover {
+    color: #1a5854;
+    text-decoration: underline;
+}
+
+
+
+
 
 
 
